@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+h1.h{
+  font-size:4 rem;
+  font-style:italic, bold;
+  color : rgb(24, 17, 112);
+}
+h2.h{
+  font-size:3 rem;
+  font-style:bold;
+  color : rgb(182, 41, 135);
+}
+
+h1.curly { color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 130px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; }
+h2.curly { color: #a7e8f8; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34; }

@@ -1,25 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bulma/css/bulma.min.css';
+import { Container } from 'react-bootstrap';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
+import Teaching from './components/Teaching';
+import Riding from './components/Riding';
+import Gallery from './components/Gallery';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
+import MenuAppBar  from './components/MenuAppBar';
+import {
 
-function App() {
+  Switch,
+  Route,
+ 
+} from "react-router-dom";
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Header/>
+      <MenuAppBar/>
+      
+      <Switch>
+
+      <Route exact from="/" render={props => <HomePage {...props} />} />
+      <Route exact from="/teaching" render={props => <Teaching {...props} />} />
+      <Route exact from="/riding" render={props => <Riding {...props} />} />
+      <Route exact from="/gallery" render={props => <Gallery {...props} />} />
+      <Route exact from="/testimonials" render={props => <Testimonials {...props} />} />
+      <Route exact from="/contact" render={props => <Contact {...props} />} />
+      </Switch>
+      
+
+   
+    </Container>
+  )
 }
 
 export default App;
