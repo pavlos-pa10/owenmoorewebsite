@@ -11,7 +11,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Button from '@mui/material/Button'
 import { withRouter } from "react-router-dom";
-import makeStyles from '@mui/styles/makeStyles';
+
 
 
 const MenuAppBar = props => {
@@ -79,7 +79,7 @@ const MenuAppBar = props => {
       <AppBar position="static">
         <Toolbar>
       <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Menu
+            Owen Moore
           </Typography>
           {isMobile? (
             <>

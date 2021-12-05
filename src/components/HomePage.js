@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-
+import {Stack, Button} from '@mui/material'
 import image1 from '../assets/index_image_1.jpeg'
 
 
@@ -56,7 +56,15 @@ His skills as a horseman and his empathy for the horse, coupled with his charism
 </Typography> 
             </Container>
 
-    
+            <Stack
+              sx={{ pt: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+            >
+              <Button variant="contained">Book Lesson</Button>
+              <Button variant="outlined">Contact Owen</Button>
+            </Stack>
 
 <Footer />
 
