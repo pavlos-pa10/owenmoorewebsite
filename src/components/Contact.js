@@ -43,7 +43,7 @@ function Contact() {
         </Box>
             <Container>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-    To contact Owen or Laura to book lessons or discuss any horse instruction issues please use buttons below:
+    To contact Owen or Laura to book lessons or discuss any horse training issues please use buttons below:
     </Typography>
   
     </Container>
