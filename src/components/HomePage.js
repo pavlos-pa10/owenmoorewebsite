@@ -50,8 +50,7 @@ Over the last 30 years Owen has become widely known as an accomplished event rid
    <Typography variant="h5" align="center" color="text.secondary" paragraph> 
 His skills as a horseman and his empathy for the horse, coupled with his charismatic personality make him hugely popular with pupils, and he remains one of the most respected riders amongst his peers on the Eventing circuit.
 </Typography> 
-<Typography variant="h5" align="center" color="text.secondary" paragraph> 
-
+<Typography variant="h5" align="center" color="text.body" fontStyle='italic' fontFamily= 'Helvetica Neue' paragraph>
 "One of the nicest, most experienced and gifted teachers on the circuit today, Owen’s ability to develop strong and trusting horse and rider partnerships is unsurpassed" – Tina Cook
 </Typography> 
             </Container>
@@ -62,8 +61,16 @@ His skills as a horseman and his empathy for the horse, coupled with his charism
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Book Lesson</Button>
-              <Button variant="outlined">Contact Owen</Button>
+    
+    <Button variant="contained" onClick={() => {
+    window.open('mailto:l.browne@hotmail.co.uk?subject=Lessons with Owen Moore')
+  }} 
+  >Book Lesson
+  </Button>
+              <Button variant="outlined"  onClick={() => {
+    window.open('mailto:owenmoore@hotmail.co.uk?subject=Contact Owen from website')
+
+  }}>Contact Owen</Button>
             </Stack>
 
 <Footer />

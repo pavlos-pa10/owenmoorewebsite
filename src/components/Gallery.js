@@ -54,8 +54,16 @@ export default function Gallery() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Book Lesson</Button>
-              <Button variant="outlined">Contact Owen</Button>
+    
+    <Button variant="contained" onClick={() => {
+    window.open('mailto:l.browne@hotmail.co.uk?subject=Lessons with Owen Moore')
+  }} 
+  >Book Lesson
+  </Button>
+              <Button variant="outlined"  onClick={() => {
+    window.open('mailto:owenmoore@hotmail.co.uk?subject=Contact Owen from website')
+
+  }}>Contact Owen</Button>
             </Stack>
           </Container>
         </Box>
